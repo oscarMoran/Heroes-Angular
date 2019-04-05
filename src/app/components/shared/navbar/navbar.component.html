@@ -19,10 +19,10 @@
         <a class="nav-link" [routerLink]="['about']">About</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <div class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search heroe" 
         aria-label="Search" (keyup.enter)="SearchHeroe(searchText.value)" #searchText />
       <button class="btn btn-outline-primary my-2 my-sm-0"  (click)="SearchHeroe(searchText.value)" type="button">Search</button>
-    </form>
+    </div>
   </div>
 </nav>

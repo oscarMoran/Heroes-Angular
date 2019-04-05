@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http'
 
 //Routes
 import {APP_ROUTING} from './app.routes';
@@ -30,7 +31,7 @@ import { HeroeCardComponent } from './components/heroe-card/heroe-card.component
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,HttpClientModule
   ],
   providers: [HeroesService],
   bootstrap: [AppComponent]
