@@ -1,0 +1,5 @@
+<h1>Found Heroes</h1>
+<hr>
+<div class="card-columns">
+  <app-heroe-card [heroe]="h" (SendHeroeId) = "HeroeDetail($event)" [heroeId]="h.id" *ngFor="let h of searchResultValues; let i = index"></app-heroe-card>
+</div>
