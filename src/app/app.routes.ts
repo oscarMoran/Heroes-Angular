@@ -6,12 +6,12 @@ import {HeroeComponent } from './components/heroe/heroe.component';
 import {SearchresultComponent} from './components/searchresult/searchresult.component';
 
 const APP_ROUTES : Routes = [
-    { path : 'home' , component: HomeComponent},
+    { path : '' , component: HomeComponent},
     { path : 'about' , component: AboutComponent},
     { path : 'heroes' , component: HeroesComponent},
     { path : 'heroe/:id' , component: HeroeComponent},
     { path : 'searchResult/:termino' , component: SearchresultComponent},
-    { path : '**' , pathMatch :'full' , redirectTo : 'home'}
+    { path : '**' , pathMatch :'full' , redirectTo : ''}
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
